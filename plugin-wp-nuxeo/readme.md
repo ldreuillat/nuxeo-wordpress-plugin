@@ -1,4 +1,4 @@
-# Plugin Nuxeo pour Wordpress
+# Nuxeo Plugin for Wordpress
 
 **Contributors**:       [nuxeo](http://www.nuxeo.com/)  
 **Tags**:               automation, nuxeo  
@@ -22,15 +22,13 @@ Manual installation through the Plugins panel of WordPress.
 
 ## Usage
 
-Configuration des options du plugins.
-Utilisation du shortcode [cmis] avec les paramètres suivants :
-* folder="/my particular/folder name/" 				# Chemin du répertoire complet sous la racine de Corum
-* etablissement="CROUS01"   						# Indication de l'établissement cible
-* partage="Partage"                					# Indicateur du niveau Partage
-* service="Service Courrier"						# Indicateur de service sour le CROUS courant
-* name="Agenda%.doc"            					# Nom du document (pouvant inclure des caractères génériques)
-* doc_id="c5e890d3-87f5-42cb-abe4-1ed9d0d2600c"		# Permalink Nuxeo d'un document
-* dossier_id="05cdeaa1-e57d-450a-8347-1600206e7cce"	# Permalink Nuxeo d'un dossier
+Usage of the plugin :
+ * [nuxeo path="/my particular/folder name/"] 												# Display the content of a folderish document based on its path (under the configured domain path)
+ * [nuxeo type="File"]   																							# Display Documents whose type matches
+ * [nuxeo nxquery="SELECT * FROM File WHERE ..."]                				# Display Documents based on the NXQL query
+ * [nuxeo name="Agenda%.doc"]                   													# Docs whose name matches. May include wildcard character '%'.
+ * [nuxeo doc_id="c5e890d3-87f5-42cb-abe4-1ed9d0d2600c"]				# Display the detail of a document based on its id
+ * [nuxeo folderish_id="05cdeaa1-e57d-450a-8347-1600206e7cce"]		# Display the content of a folderish document based on its id
 
 ## License
 
